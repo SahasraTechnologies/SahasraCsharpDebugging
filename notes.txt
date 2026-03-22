@@ -1,0 +1,226 @@
+📘 Sahasra Technologies
+C# Debugging Starter Guide (Beginner Friendly)
+🚀 1. What is this project?
+
+This project is a C# Debugging Practice Application.
+
+👉 You will NOT just learn coding
+👉 You will learn how to find and fix real errors
+
+🎯 Goal of this training
+
+By the end, you should be able to:
+
+✔ Understand C# basics
+✔ Read code confidently
+✔ Identify errors
+✔ Use Visual Studio debugger
+✔ Fix real-world bugs
+
+🧠 2. How to learn from this project
+
+Do NOT try to understand everything at once.
+
+Follow this method:
+
+Run → Break → Observe → Fix → Re-run
+🛠️ 3. Setup (Step by Step)
+Install:
+
+Visual Studio (Community)
+
+.NET SDK
+
+Open project:
+Open folder → Open .csproj file → Run (F5)
+🧩 4. Understanding Program.cs (Main Entry)
+
+This is the starting point:
+
+StudentService service = new StudentService();
+Seed(service);
+
+👉 Creates service
+👉 Loads sample data
+
+Menu system
+while (run)
+
+👉 Loop runs continuously
+👉 Shows menu
+👉 Takes user input
+
+🧱 5. Basic C# Concepts (Very Important)
+1. Class
+public class Student
+
+👉 Blueprint
+👉 Like a template
+
+2. Object
+Student s = new Student();
+
+👉 Real data instance
+
+3. Method
+public void AddStudent(Student student)
+
+👉 Function
+👉 Performs action
+
+4. List (Collection)
+List<Student>
+
+👉 Stores multiple students
+👉 Like an array but flexible
+
+5. Loop
+while (run)
+
+👉 Runs repeatedly
+
+6. Condition
+if (student == null)
+
+👉 Decision making
+
+🐞 6. What is Debugging?
+
+Debugging = Finding + Fixing errors
+
+🔍 7. Types of errors you will see
+1. Logical Error
+
+Code runs but wrong result
+
+2. Runtime Error
+
+App crashes
+
+3. Null Error
+
+Object not initialized
+
+🧰 8. Debugging Tools (VERY IMPORTANT)
+
+In Visual Studio:
+
+🔴 Breakpoint
+
+Click left side:
+
+● Red dot
+
+Stops execution
+
+▶ Step Over (F10)
+
+Runs next line
+
+🔽 Step Into (F11)
+
+Goes inside method
+
+👀 Watch Window
+
+Track variables
+
+📦 Locals Window
+
+See all variables
+
+🧪 9. How to debug (STEP BY STEP)
+
+Example:
+
+var student = service.GetStudentById(id);
+Step 1
+
+Put breakpoint
+
+Step 2
+
+Run (F5)
+
+Step 3
+
+Enter input
+
+Step 4
+
+Check:
+
+id value
+
+student value
+
+Step 5
+
+Find issue
+
+⚠️ 10. Common Bugs in this Project
+
+Students must identify:
+
+❌ Duplicate ID allowed
+
+👉 Should not allow
+
+❌ Null crash
+.First()
+
+👉 Fix using:
+
+FirstOrDefault()
+❌ Wrong update logic
+newFee = student.Fee;
+
+👉 Should be:
+
+student.Fee = newFee;
+❌ Delete wrong student
+
+👉 Always deleting first
+
+❌ Divide by zero
+total / count
+🧠 11. Debugging Mindset
+
+Always ask:
+
+What is happening?
+Why is it happening?
+What should happen?
+📌 12. Student Tasks
+
+You must:
+
+✔ Run all modules
+✔ Find errors
+✔ Fix errors
+✔ Explain the reason
+
+🏁 13. Final Outcome
+
+After this project, you will:
+
+✔ Think like a developer
+✔ Debug like a professional
+✔ Understand real code
+
+💡 Trainer Tip (You can tell students)
+
+👉 “Good developers write code
+👉 Great developers debug problems”
+
+📢 Next Level (Coming next in training)
+
+After this:
+
+JSON Storage
+→ SQL Server
+→ Web API
+→ React UI
+🏫 Sahasra Technologies
+
+Learn → Practice → Debug → Build → Get Job
